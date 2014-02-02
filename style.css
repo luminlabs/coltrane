@@ -1,0 +1,49 @@
+
+
+
+@keyframes ex4 { /* CSS3 */
+  0%   { background-image:url('images/nyc.jpg'); }
+  50% { background-image:url('images/london.jpg'); }
+  100%   { background-image:url('images/nyc.jpg'); }
+}
+@-moz-keyframes ex4 { /* Firefox */
+   0%   { background-image:url('images/nyc.jpg'); }
+ 50% { background-image:url('images/london.jpg'); }
+ 100%   { background-image:url('images/nyc.jpg'); }
+}
+@-webkit-keyframes ex4 { /* Webkit */
+  0%   { background-image:url('images/nyc.jpg'); }
+  50% { background-image:url('images/london.jpg'); }
+  100%   { background-image:url('images/nyc.jpg'); }
+}
+body {
+  background-image:url('images/nyc.jpg');
+  background-repeat:no-repeat;
+
+  background-position:center; 
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  animation:         ex4 30s infinite; /* CSS3 */
+  -moz-animation:    ex4 30s infinite; /* Firefox */
+  -webkit-animation: ex4 30s infinite; /* Webkit */
+}
+
+
+
+.main-nav {
+  font-family: Arial, verdana, sans-serif;
+  font-color:white!important;
+  font-size: 15px;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-family: "futura-pt";
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5em;
+  cursor: pointer;
+}
